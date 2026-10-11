@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>الحقيبة الإثرائية - أ. طرفه المغلوث</title>
+<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f1ff;--card:#fff;--ink:#2b1f4d;--mute:#6b6288;--line:#e3d9fa;--pri:#9b7bea;--pri2:#6d48c9;--acc:#ffc65c;--soft:#ede5ff;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#171128;--card:#221a3b;--ink:#f1ecff;--mute:#b3a8d4;--line:#38295f;--pri:#b79cff;--pri2:#7a56d6;--acc:#ffc65c;--soft:#2e2350;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#171128;--card:#221a3b;--ink:#f1ecff;--mute:#b3a8d4;--line:#38295f;--pri:#b79cff;--pri2:#7a56d6;--acc:#ffc65c;--soft:#2e2350;color-scheme:dark}
+*{box-sizing:border-box;margin:0}
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:"Readex Pro",Tahoma,"Segoe UI",sans-serif;line-height:1.8;min-height:100vh}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer;color:inherit}
+:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+.hero{background:radial-gradient(circle at 15% 20%,rgba(255,255,255,.28),transparent 40%),radial-gradient(circle at 85% 90%,rgba(255,198,92,.35),transparent 35%),linear-gradient(135deg,var(--pri2),var(--pri));color:#fff;padding:44px 20px 80px;position:relative;overflow:hidden;border-radius:0 0 40px 40px}
+.hero svg{position:absolute;inset-inline-start:-40px;top:-30px;opacity:.12;width:320px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 18px;position:relative}
+.hero h1{font-size:clamp(28px,6vw,48px);font-weight:700;line-height:1.3}
+.hero p{opacity:.9;margin-top:6px}
+.by{display:inline-block;margin-top:18px;background:#fff;color:#4a2ba8;padding:8px 22px;border-radius:99px;font-weight:700;font-size:17px;box-shadow:0 6px 18px rgba(60,20,120,.3)}
+.tools{display:flex;gap:10px;margin-top:-30px;position:relative;flex-wrap:wrap}
+.search{flex:1;min-width:200px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 16px;font:inherit;color:var(--ink);box-shadow:0 6px 20px rgba(0,0,0,.08)}
+.theme{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:0 16px;box-shadow:0 6px 20px rgba(0,0,0,.08)}
+.prog{margin:18px 0 4px;display:flex;align-items:center;gap:12px;font-size:14px;color:var(--mute)}
+.bar{flex:1;height:8px;background:var(--line);border-radius:9px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:var(--acc);transition:width .4s}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding:10px 0;border-bottom:1px solid var(--line);margin-top:8px}
+nav .wrap{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none}
+nav button{flex:none;border:1px solid var(--line);background:var(--card);border-radius:99px;padding:8px 18px;font-size:15px;transition:background .2s,color .2s}
+nav button[aria-selected=true]{background:var(--pri);color:#fff;border-color:var(--pri)}
+main{padding:24px 0 60px;min-height:60vh}
+.intro{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
+.tile{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px;text-align:right;transition:transform .2s,border-color .2s}
+.tile:hover{transform:translateY(-3px);border-color:var(--pri)}
+.tile b{display:block;font-size:20px;margin:6px 0 2px}
+.tile span{color:var(--mute);font-size:14px}
+.ico{font-size:32px}
+.sec-h{display:flex;align-items:center;gap:12px;margin-bottom:6px}
+.sec-h h2{font-size:26px}
+.sec-d{color:var(--mute);margin-bottom:18px}
+.grp{margin:26px 0 12px;font-size:19px;font-weight:600;padding-inline-start:12px;border-inline-start:5px solid var(--acc)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
+.item{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;display:flex;flex-direction:column;gap:12px;animation:in .3s both}
+@keyframes in{from{opacity:0;transform:translateY(8px)}}
+.item h4{font-size:16px;font-weight:600;display:flex;gap:10px;align-items:flex-start}
+.item h4 em{font-style:normal;background:var(--soft);border-radius:10px;padding:2px 8px;font-size:18px}
+.acts{display:flex;gap:8px;margin-top:auto}
+.go{flex:1;text-align:center;background:var(--pri);color:#fff;border-radius:10px;padding:8px;font-size:14px;font-weight:600}
+.go.alt{background:var(--soft);color:var(--pri)}
+.go:hover{filter:brightness(1.1)}
+.chk{border:1px solid var(--line);background:none;border-radius:10px;padding:0 12px}
+.chk[aria-pressed=true]{background:var(--acc);border-color:var(--acc);color:#2a1d00}
+.none{text-align:center;color:var(--mute);padding:40px}
+.tile .ico{display:grid;place-items:center;width:62px;height:62px;border-radius:20px;background:linear-gradient(135deg,var(--soft),var(--line));font-size:30px}.tile{box-shadow:0 4px 14px rgba(109,72,201,.08)}.tile:hover{box-shadow:0 12px 28px rgba(109,72,201,.2)}.item{box-shadow:0 3px 10px rgba(109,72,201,.07)}.go{background:linear-gradient(135deg,var(--pri2),var(--pri))}.go.alt{background:var(--soft);color:var(--pri2)}nav button[aria-selected=true]{background:linear-gradient(135deg,var(--pri2),var(--pri))}.grp{border-inline-start-color:var(--pri)}.bar i{background:linear-gradient(90deg,var(--pri),var(--acc))}footer{text-align:center;color:var(--mute);font-size:14px;padding:20px 0 30px;border-top:1px solid var(--line)}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header class="hero">
+<svg viewBox="0 0 100 100" fill="none" stroke="#fff" stroke-width="2"><circle cx="50" cy="50" r="12"/><circle cx="50" cy="50" r="28"/><circle cx="50" cy="50" r="46"/><path d="M50 4v92M4 50h92"/></svg>
+<div class="wrap">
+<h1>الحقيبة الإثرائية</h1>
+<p>حقيبة تعليمية متنوعة المجالات متعددة المصادر</p>
+<span class="by">إعداد: أ. طرفه المغلوث</span>
+</div>
+</header>
+<div class="wrap">
+<div class="tools">
+<input class="search" id="q" type="search" placeholder="ابحث عن درس أو استراتيجية…" aria-label="بحث">
+<button class="theme" id="th" aria-label="تبديل المظهر">🌓</button>
+</div>
+<div class="prog"><span id="pt"></span><div class="bar"><i id="pb"></i></div></div>
+</div>
+<nav><div class="wrap" id="tabs" role="tablist"></div></nav>
+<main><div class="wrap" id="view"></div></main>
+<footer>الحقيبة الإثرائية · أ. طرفه المغلوث</footer>
+<script>
+var Y=function(id){return "https://youtu.be/"+id};
+var S=[
+{id:"stem",t:"STEM",i:"🔬",d:"تعلّم بالتجربة والتصميم والابتكار",g:[
+ {n:"التعلم باللعب",l:[["التعلم باللعب","🎲",Y("ZJ15NRp_k_4")]]},
+ {n:"عادات العقل المنتجة",l:[["عادات العقل المنتجة","▶",Y("DK7zRhMNUwQ")]]},
+ {n:"التقنيات والتجارب",l:[["التصميم الهندسي والنمذجة","▶",Y("spmasGYh4iM")],["آلة الحفر والتشكيل الرقمي","▶",Y("vQUA7rIRYhs")],["الروبوت التعليمي","🤖",Y("a45BTUgCiV0")],["الطباعة ثلاثية الأبعاد","🖨️",Y("wGA0K2czywI")],["الآردينو","🔌",Y("U7yPXb2EolU")],["تجربة الأزهار الملونة","🌸",Y("gCnqH32mjDw")]]}]},
+{id:"rights",t:"حقوقي",i:"⚖️",d:"أتعرّف على حقوقي كطفل",g:[{n:"حقوق الطفل",l:[["حق التعلم","📚",Y("2aeCX2wONE0?si=nTWw1CmZDw9riQxU")],["حق الغذاء الصحي","🍎",Y("2aeCX2wONE0?si=nTWw1CmZDw9riQxU")],["حق الرعاية الصحية","🩺",Y("2aeCX2wONE0?si=nTWw1CmZDw9riQxU")],["حق السكن","🏠",Y("2aeCX2wONE0?si=nTWw1CmZDw9riQxU")]]}]},
+{id:"val",t:"القيم",i:"💎",d:"قيم نبيلة نتعلمها ونمارسها في حياتنا",g:[{n:"قيمي الجميلة",l:[["الصدقة","🤲",Y("xZQbc3l3S1A")],["الخلق","🌟",Y("tNTk7W6m_AY")],["الإحسان","💝",Y("t9Noxyf56Nw")],["المساواة","🤝",Y("FzBlucM6pbE")],["آداب الزيارة","🚪",Y("4SC09jSkW3E")],["العمل التطوعي","🙌",Y("zh08b_Lmy4k")],["طلب العلم","📚",Y("D1q2cLO9fgI")],["الشكر","🌷",Y("2yNRpcRAeGo")]]}]},
+{id:"dev",t:"البرامج التطويرية",i:"🚀",d:"المواطنة الرقمية وقصص من تاريخنا",g:[
+ {n:"المواطنة الرقمية",l:[["برنامج المواطنة الرقمية","💻","https://iencontent.ien.edu.sa/books/DigitalCitizenshipCoursePE/story.html"]]},
+ {n:"حكايات الدرعية",l:[["بداية المجد","🏰","https://iencontent.ien.edu.sa/Storage/Flips/diriyah_stry04/mobile/index.html"],["الكرم الأصيل","☕","https://iencontent.ien.edu.sa/Storage/Flips/diriyah_stry01/mobile/index.html"],["منارة علم","📖","https://iencontent.ien.edu.sa/Storage/Flips/diriyah_stry02/mobile/index.html"]]}]},
+{id:"read",t:"الفهم القرائي",i:"📘",d:"استراتيجيات وقصص وأنشطة تفاعلية",g:[
+ {n:"استراتيجيات الفهم القرائي",l:[["استراتيجية ما قبل القراءة","▶",Y("qegtdcd1bmA")],["استراتيجية القراءة التمهيدية","▶",Y("B4pexZtpBm4")],["استراتيجية القراءة المتعمقة","▶",Y("pM-zVNG83aE")],["استراتيجية ما بعد القراءة","▶",Y("FOipESxnmNc")],["استراتيجية تحليل النص","▶",Y("V_Panmv_waQ")],["استراتيجية التساؤل الذكي","▶",Y("kUOqcYkP33o")],["استراتيجية كتابة الفقرة","▶",Y("zmqfUlpMNo0")],["استراتيجية تحديد بنية النص","▶",Y("IIAKj7y-C2U")],["الملحق الإثرائي للفهم القرائي (للمعلم)","📄","https://iencontent.ien.edu.sa/books/TeacherAppendix.pdf"]]},
+ {n:"الملحق الإثرائي: قصص",l:[["الإخوة الثلاثة","📄","https://iencontent.ien.edu.sa/books/studentthreebrothers.pdf","نص الاستماع",Y("tVbopSuFigw?feature=shared")],["القطة وكرات الصوف","📄","https://iencontent.ien.edu.sa/books/studentcatandwoolballs.pdf","نص الاستماع",Y("1k62fmzhMHY?feature=shared")],["حمامة في الصف","📄","https://iencontent.ien.edu.sa/books/studentPigeoninclass.pdf","نص الاستماع",Y("J3v_H-sb1NY?feature=shared")]]},
+ {n:"أنشطة الفهم القرائي",l:[["النشاط التفاعلي ١","🎯","https://iencontent.ien.edu.sa/books/stdinteractiveactivity1/index.html"],["النشاط التفاعلي ٢","🎯","https://iencontent.ien.edu.sa/books/stdinteractiveactivity2/index.html"]]}]},
+{id:"code",t:"كن مبرمجًا",i:"👾",d:"برمجة وألعاب تعليمية",g:[{n:"ابدأ البرمجة",l:[["مشروع المسابقة الثقافية","🏆","https://www.ien.edu.sa/#/learnprogramming/53"],["مدخل إلى Raspberry Pi","🍓",Y("-Ct3ob1LdNY?si=4kTPj3ZwlZYbAqbs")],["العب وتعلّم","🎮","https://www.ien.edu.sa/#/playandtrain"]]}]},
+{id:"math",t:"ألعاب تعليمية",i:"🎲",d:"ألعاب رياضيات: القيمة المنزلية ومقارنة الأعداد وترتيبها",g:[{n:"القيمة المنزلية ضمن مئات الألوف",l:[["لعبة القيمة المنزلية ١","🔢","https://game.tahdiri.com/resource/766626096"],["لعبة القيمة المنزلية ٢","🔢","https://game.tahdiri.com/resource/1403301052"]]},{n:"القيمة المنزلية ضمن الملايين",l:[["لعبة الملايين ١","🔢","https://game.tahdiri.com/resource/154471531"],["لعبة الملايين ٢","🔢","https://game.tahdiri.com/resource/603153265"]]},{n:"مقارنة الأعداد",l:[["لعبة مقارنة الأعداد","⚖️","https://game.tahdiri.com/resource/1501550845"]]},{n:"ترتيب الأعداد",l:[["لعبة ترتيب الأعداد ١","📊","https://game.tahdiri.com/resource/1808963456"],["لعبة ترتيب الأعداد ٢","📊","https://game.tahdiri.com/resource/1636976649"]]}]},
+{id:"space",t:"العب وتعلم في الفضاء",i:"🪐",d:"ألعاب ممتعة لاستكشاف الكواكب والقمر والنجوم",g:[{n:"ألعاب الفضاء",l:[["كواكب المجموعة الشمسية","🪐","https://ssa.gov.sa/space-games/games/ssa_solar_system_order_game.html?lang=ar"],["اختبر معرفتك في الفضاء","🧠","https://ssa.gov.sa/space-games/games/ssa_space_quiz.html?lang=ar"],["رحلة في المجموعة الشمسية","🔍","https://ssa.gov.sa/space-games/games/ssa_planets_word_search.html"],["استوديو تلوين مركبة الإطلاق","🎨","https://ssa.gov.sa/space-games/games/ssa_coloring.html"],["رحلة لاستكشاف القمر","🌙","https://ssa.gov.sa/space-games/games/ssa_moon_trip_game.html"],["لعبة التقاط النجوم","⭐","https://ssa.gov.sa/space-games/games/ssa_collect_stars_game.html"]]}]},
+{id:"lib",t:"مكتبتي",i:"📚",d:"كتب وقصص للقراءة الحرة",g:[{n:"القراءة الحرة",l:[["سلسلة كتب بالعربية","📗","https://www.ien.edu.sa/#/arabickidslinks/41"],["نادي القراءة","📕","https://www.ien.edu.sa/#/readenjoy/stories"]]}]}
+];
+var $=function(s){return document.querySelector(s)},cur="home",done={};
+try{done=JSON.parse(localStorage.getItem("done")||"{}")}catch(e){}
+function save(){try{localStorage.setItem("done",JSON.stringify(done))}catch(e){}}
+var total=0;S.forEach(function(s){s.g.forEach(function(g){total+=g.l.length})});
+function esc(x){return x.replace(/&/g,"&amp;").replace(/"/g,"&quot;")}
+function prog(){var n=Object.keys(done).filter(function(k){return done[k]}).length;
+$("#pt").textContent="أنجزت "+n+" من "+total;$("#pb").style.width=(n/total*100)+"%"}
+function card(sid,gi,li,it){var k=sid+gi+li;
+return '<div class="item"><h4><em>'+it[1]+'</em>'+it[0]+'</h4><div class="acts"><a class="go" target="_blank" rel="noopener" href="'+esc(it[2])+'" data-k="'+k+'">'+(it[3]?'فتح القصة':'فتح')+'</a>'+(it[3]?'<a class="go alt" target="_blank" rel="noopener" href="'+esc(it[4])+'">'+it[3]+'</a>':'')+'<button class="chk" data-k="'+k+'" aria-pressed="'+!!done[k]+'" aria-label="تم الإنجاز">✓</button></div></div>'}
+function sec(s){var h='<div class="sec-h"><span class="ico">'+s.i+'</span><h2>'+s.t+'</h2></div><p class="sec-d">'+s.d+'</p>';
+s.g.forEach(function(g,gi){h+='<h3 class="grp">'+g.n+'</h3><div class="grid">'+g.l.map(function(it,li){return card(s.id,gi,li,it)}).join("")+'</div>'});return h}
+function render(){var v=$("#view"),q=$("#q").value.trim(),h="";
+if(q){S.forEach(function(s){s.g.forEach(function(g,gi){g.l.forEach(function(it,li){if(it[0].indexOf(q)>-1||g.n.indexOf(q)>-1)h+=card(s.id,gi,li,it)})})});
+v.innerHTML=h?'<div class="grid">'+h+'</div>':'<p class="none">لا توجد نتائج لهذا البحث. جرّب كلمة أخرى.</p>';return}
+if(cur==="home"){v.innerHTML='<div class="intro">'+S.map(function(s){return '<button class="tile" data-go="'+s.id+'"><span class="ico">'+s.i+'</span><b>'+s.t+'</b><span>'+s.d+'</span></button>'}).join("")+'</div>'}
+else v.innerHTML=sec(S.filter(function(s){return s.id===cur})[0])}
+function tabs(){$("#tabs").innerHTML=[{id:"home",t:"🏠 الرئيسية"}].concat(S.map(function(s){return {id:s.id,t:s.i+" "+s.t}})).map(function(x){return '<button role="tab" data-go="'+x.id+'" aria-selected="'+(x.id===cur)+'">'+x.t+'</button>'}).join("")}
+function go(id){cur=id;$("#q").value="";tabs();render();window.scrollTo({top:$("nav").offsetTop-4})}
+document.addEventListener("click",function(e){var g=e.target.closest("[data-go]");if(g){go(g.dataset.go);return}
+var c=e.target.closest(".chk");if(c){var k=c.dataset.k;done[k]=!done[k];save();c.setAttribute("aria-pressed",!!done[k]);prog();return}
+var a=e.target.closest("a.go[data-k]");if(a&&!done[a.dataset.k]){done[a.dataset.k]=true;save();var b=a.parentNode.querySelector(".chk");if(b)b.setAttribute("aria-pressed","true");prog()}});
+$("#q").addEventListener("input",render);
+$("#th").onclick=function(){var r=document.documentElement,d=r.dataset.theme?r.dataset.theme==="dark":matchMedia("(prefers-color-scheme:dark)").matches;r.dataset.theme=d?"light":"dark"};
+tabs();render();prog();
+</script>
+</body>
+</html
